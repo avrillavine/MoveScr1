@@ -45,6 +45,9 @@
                         <next>
                           <block type="multimedia_displaybmp" id="659">
                             <field name="BMP">up2</field>
+                            <next>
+                              <block type="movement_forward" id="882"></block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -69,6 +72,9 @@
                         <next>
                           <block type="multimedia_displaybmp" id="806">
                             <field name="BMP">down1</field>
+                            <next>
+                              <block type="movement_reverse" id="871"></block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -93,6 +99,9 @@
                         <next>
                           <block type="multimedia_displaybmp" id="825">
                             <field name="BMP">left1</field>
+                            <next>
+                              <block type="movement_left" id="892"></block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -117,6 +126,9 @@
                         <next>
                           <block type="multimedia_displaybmp" id="826">
                             <field name="BMP">right1</field>
+                            <next>
+                              <block type="movement_right" id="902"></block>
+                            </next>
                           </block>
                         </next>
                       </block>
