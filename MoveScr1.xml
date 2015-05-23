@@ -7,43 +7,47 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_setcursor" id="736" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="737">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="738">
-            <field name="NUM">1</field>
-          </block>
-        </value>
+      <block type="oled_cleardisplay" id="794">
         <next>
-          <block type="controls_if" id="304" inline="false">
-            <value name="IF0">
-              <block type="sensor_button" id="390">
-                <field name="OBJECT">UP</field>
+          <block type="oled_setcursor" id="736" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="737">
+                <field name="NUM">1</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="multimedia_displaybmp" id="659">
-                <field name="BMP">up.bmp</field>
-                <next>
-                  <block type="oled_setend" id="764" inline="true">
-                    <value name="ENDX">
-                      <block type="math_number" id="766">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <value name="ENDY">
-                      <block type="math_number" id="768">
-                        <field name="NUM">100</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
+            <value name="STARTY">
+              <block type="math_number" id="738">
+                <field name="NUM">1</field>
               </block>
-            </statement>
+            </value>
+            <next>
+              <block type="controls_if" id="304" inline="false">
+                <value name="IF0">
+                  <block type="sensor_button" id="390">
+                    <field name="OBJECT">UP</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="multimedia_displaybmp" id="659">
+                    <field name="BMP">up.bmp</field>
+                    <next>
+                      <block type="oled_setend" id="764" inline="true">
+                        <value name="ENDX">
+                          <block type="math_number" id="766">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="ENDY">
+                          <block type="math_number" id="768">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
           </block>
         </next>
       </block>
