@@ -28,10 +28,10 @@
                   </block>
                 </value>
                 <next>
-                  <block type="multimedia_displaybmp" id="659">
-                    <field name="BMP">up.bmp</field>
+                  <block type="oled_cleardisplay" id="735">
                     <next>
-                      <block type="oled_cleardisplay" id="734">
+                      <block type="multimedia_displaybmp" id="659">
+                        <field name="BMP">up.bmp</field>
                         <next>
                           <block type="oled_setcursor" id="731" inline="true">
                             <value name="STARTX">
