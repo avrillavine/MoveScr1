@@ -40,7 +40,7 @@
                       </block>
                     </value>
                     <next>
-                      <block type="multimedia_displaybmp" id="659" disabled="true">
+                      <block type="multimedia_displaybmp" id="659">
                         <field name="BMP">up</field>
                       </block>
                     </next>
