@@ -24,7 +24,7 @@
                 </value>
                 <next>
                   <block type="controls_if" id="304" inline="false">
-                    <mutation elseif="3"></mutation>
+                    <mutation elseif="3" else="1"></mutation>
                     <value name="IF0">
                       <block type="sensor_button" id="390">
                         <field name="OBJECT">UP</field>
@@ -172,6 +172,9 @@
                           </block>
                         </next>
                       </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="movement_stop" id="928"></block>
                     </statement>
                     <next>
                       <block type="multimedia_doupdate" id="851"></block>
