@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="controls_if" id="304" inline="false">
-                <mutation elseif="1"></mutation>
+                <mutation elseif="3"></mutation>
                 <value name="IF0">
                   <block type="sensor_button" id="390">
                     <field name="OBJECT">UP</field>
@@ -67,6 +67,54 @@
                     <next>
                       <block type="multimedia_displaybmp" id="806">
                         <field name="BMP">down</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="sensor_button" id="818">
+                    <field name="OBJECT">LEFT</field>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="oled_setcursor" id="819" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="820">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="821">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="825">
+                        <field name="BMP">left</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF3">
+                  <block type="sensor_button" id="817">
+                    <field name="OBJECT">RIGHT</field>
+                  </block>
+                </value>
+                <statement name="DO3">
+                  <block type="oled_setcursor" id="822" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="823">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="824">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="826">
+                        <field name="BMP">right</field>
                       </block>
                     </next>
                   </block>
