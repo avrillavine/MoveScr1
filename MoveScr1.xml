@@ -1,49 +1,49 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="multimedia_displaybmp" id="834" x="135" y="-200">
-    <field name="BMP">centre</field>
-    <next>
-      <block type="oled_setcursor" id="831" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="832">
-            <field name="NUM">128</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="833">
-            <field name="NUM">28</field>
-          </block>
-        </value>
+  <block type="controls_whileUntil" id="158" inline="false" x="148" y="-115">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="214">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="794">
         <next>
-          <block type="controls_whileUntil" id="158" inline="false">
-            <field name="MODE">UNTIL</field>
-            <value name="NUMBER">
-              <block type="sensor_button" id="214">
-                <field name="OBJECT">ENTER</field>
+          <block type="oled_setcursor" id="736" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="737">
+                <field name="NUM">1</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="oled_cleardisplay" id="794">
-                <next>
-                  <block type="oled_setcursor" id="736" inline="true">
+            <value name="STARTY">
+              <block type="math_number" id="738">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="304" inline="false">
+                <mutation elseif="3"></mutation>
+                <value name="IF0">
+                  <block type="sensor_button" id="390">
+                    <field name="OBJECT">UP</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="oled_setcursor" id="835" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="737">
-                        <field name="NUM">1</field>
+                      <block type="math_number" id="836">
+                        <field name="NUM">128</field>
                       </block>
                     </value>
                     <value name="STARTY">
-                      <block type="math_number" id="738">
-                        <field name="NUM">1</field>
+                      <block type="math_number" id="837">
+                        <field name="NUM">28</field>
                       </block>
                     </value>
                     <next>
-                      <block type="controls_if" id="304" inline="false">
-                        <mutation elseif="3"></mutation>
-                        <value name="IF0">
-                          <block type="sensor_button" id="390">
-                            <field name="OBJECT">UP</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
+                      <block type="multimedia_displaybmp" id="834">
+                        <field name="BMP">centre</field>
+                        <next>
                           <block type="oled_setcursor" id="798" inline="true">
                             <value name="STARTX">
                               <block type="math_number" id="799">
@@ -61,88 +61,88 @@
                               </block>
                             </next>
                           </block>
-                        </statement>
-                        <value name="IF1">
-                          <block type="sensor_button" id="802">
-                            <field name="OBJECT">DOWN</field>
-                          </block>
-                        </value>
-                        <statement name="DO1">
-                          <block type="oled_setcursor" id="803" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="804">
-                                <field name="NUM">56</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="805">
-                                <field name="NUM">32</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="multimedia_displaybmp" id="806">
-                                <field name="BMP">down</field>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <value name="IF2">
-                          <block type="sensor_button" id="818">
-                            <field name="OBJECT">LEFT</field>
-                          </block>
-                        </value>
-                        <statement name="DO2">
-                          <block type="oled_setcursor" id="819" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="820">
-                                <field name="NUM">56</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="821">
-                                <field name="NUM">32</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="multimedia_displaybmp" id="825">
-                                <field name="BMP">left</field>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <value name="IF3">
-                          <block type="sensor_button" id="817">
-                            <field name="OBJECT">RIGHT</field>
-                          </block>
-                        </value>
-                        <statement name="DO3">
-                          <block type="oled_setcursor" id="822" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="823">
-                                <field name="NUM">56</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="824">
-                                <field name="NUM">32</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="multimedia_displaybmp" id="826">
-                                <field name="BMP">right</field>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
+                        </next>
                       </block>
                     </next>
                   </block>
-                </next>
+                </statement>
+                <value name="IF1">
+                  <block type="sensor_button" id="802">
+                    <field name="OBJECT">DOWN</field>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="oled_setcursor" id="803" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="804">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="805">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="806">
+                        <field name="BMP">down</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="sensor_button" id="818">
+                    <field name="OBJECT">LEFT</field>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="oled_setcursor" id="819" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="820">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="821">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="825">
+                        <field name="BMP">left</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF3">
+                  <block type="sensor_button" id="817">
+                    <field name="OBJECT">RIGHT</field>
+                  </block>
+                </value>
+                <statement name="DO3">
+                  <block type="oled_setcursor" id="822" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="823">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="824">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="826">
+                        <field name="BMP">right</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
               </block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
