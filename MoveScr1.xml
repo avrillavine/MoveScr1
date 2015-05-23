@@ -31,13 +31,13 @@
                   <block type="oled_linerect" id="520">
                     <field name="OBJECT">RECT</field>
                     <next>
-                      <block type="oled_setcursor" id="578" inline="true">
-                        <value name="STARTX">
+                      <block type="oled_setend" id="604" inline="true">
+                        <value name="ENDX">
                           <block type="math_number" id="579">
                             <field name="NUM">56</field>
                           </block>
                         </value>
-                        <value name="STARTY">
+                        <value name="ENDY">
                           <block type="math_number" id="580">
                             <field name="NUM">56</field>
                           </block>
