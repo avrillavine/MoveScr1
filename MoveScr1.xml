@@ -41,7 +41,7 @@
                     </value>
                     <next>
                       <block type="multimedia_displaybmp" id="659">
-                        <field name="BMP">up.bmp</field>
+                        <field name="BMP">up</field>
                       </block>
                     </next>
                   </block>
