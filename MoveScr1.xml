@@ -28,8 +28,22 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="multimedia_displaybmp" id="659">
-                    <field name="BMP">up.bmp</field>
+                  <block type="oled_setcursor" id="798" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="799">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="800">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_displaybmp" id="659">
+                        <field name="BMP">up.bmp</field>
+                      </block>
+                    </next>
                   </block>
                 </statement>
               </block>
