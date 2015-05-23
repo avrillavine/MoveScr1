@@ -16,8 +16,8 @@
         <statement name="DO0">
           <block type="oled_cleardisplay" id="464">
             <next>
-              <block type="oled_linerect" id="520">
-                <field name="OBJECT">RECT</field>
+              <block type="multimedia_displaybmp" id="659">
+                <field name="BMP">up.bmp</field>
                 <next>
                   <block type="oled_setcursor" id="449" inline="true">
                     <value name="STARTX">
