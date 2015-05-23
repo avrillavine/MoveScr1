@@ -29,15 +29,15 @@
               <block type="multimedia_displaybmp" id="659">
                 <field name="BMP">up.bmp</field>
                 <next>
-                  <block type="oled_setcursor" id="731" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="732">
-                        <field name="NUM">10</field>
+                  <block type="oled_setend" id="764" inline="true">
+                    <value name="ENDX">
+                      <block type="math_number" id="766">
+                        <field name="NUM">1</field>
                       </block>
                     </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="733">
-                        <field name="NUM">10</field>
+                    <value name="ENDY">
+                      <block type="math_number" id="768">
+                        <field name="NUM">100</field>
                       </block>
                     </value>
                   </block>
