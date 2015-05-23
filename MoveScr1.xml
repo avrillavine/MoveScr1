@@ -46,7 +46,17 @@
                           <block type="multimedia_displaybmp" id="659">
                             <field name="BMP">up2</field>
                             <next>
-                              <block type="movement_forward" id="882"></block>
+                              <block type="movement_forward" id="882">
+                                <next>
+                                  <block type="robot_delay" id="904" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="911">
+                                        <field name="NUM">250</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
@@ -73,7 +83,17 @@
                           <block type="multimedia_displaybmp" id="806">
                             <field name="BMP">down1</field>
                             <next>
-                              <block type="movement_reverse" id="871"></block>
+                              <block type="movement_reverse" id="871">
+                                <next>
+                                  <block type="robot_delay" id="905" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="910">
+                                        <field name="NUM">250</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
@@ -100,7 +120,17 @@
                           <block type="multimedia_displaybmp" id="825">
                             <field name="BMP">left1</field>
                             <next>
-                              <block type="movement_left" id="892"></block>
+                              <block type="movement_left" id="892">
+                                <next>
+                                  <block type="robot_delay" id="906" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="909">
+                                        <field name="NUM">250</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
@@ -127,7 +157,17 @@
                           <block type="multimedia_displaybmp" id="826">
                             <field name="BMP">right1</field>
                             <next>
-                              <block type="movement_right" id="902"></block>
+                              <block type="movement_right" id="902">
+                                <next>
+                                  <block type="robot_delay" id="907" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="908">
+                                        <field name="NUM">250</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
