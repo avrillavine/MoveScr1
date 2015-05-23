@@ -89,7 +89,7 @@
                       </block>
                     </value>
                     <next>
-                      <block type="multimedia_displaybmp" id="825" disabled="true">
+                      <block type="multimedia_displaybmp" id="825">
                         <field name="BMP">left</field>
                       </block>
                     </next>
@@ -113,7 +113,7 @@
                       </block>
                     </value>
                     <next>
-                      <block type="multimedia_displaybmp" id="826" disabled="true">
+                      <block type="multimedia_displaybmp" id="826">
                         <field name="BMP">right</field>
                       </block>
                     </next>
