@@ -32,12 +32,12 @@
                   <block type="oled_setcursor" id="798" inline="true">
                     <value name="STARTX">
                       <block type="math_number" id="799">
-                        <field name="NUM">128</field>
+                        <field name="NUM">56</field>
                       </block>
                     </value>
                     <value name="STARTY">
                       <block type="math_number" id="800">
-                        <field name="NUM">9</field>
+                        <field name="NUM">28</field>
                       </block>
                     </value>
                     <next>
@@ -61,12 +61,12 @@
                     </value>
                     <value name="STARTY">
                       <block type="math_number" id="805">
-                        <field name="NUM">32</field>
+                        <field name="NUM">28</field>
                       </block>
                     </value>
                     <next>
                       <block type="multimedia_displaybmp" id="806">
-                        <field name="BMP">down</field>
+                        <field name="BMP">down1</field>
                       </block>
                     </next>
                   </block>
@@ -85,12 +85,12 @@
                     </value>
                     <value name="STARTY">
                       <block type="math_number" id="821">
-                        <field name="NUM">32</field>
+                        <field name="NUM">28</field>
                       </block>
                     </value>
                     <next>
                       <block type="multimedia_displaybmp" id="825">
-                        <field name="BMP">left</field>
+                        <field name="BMP">left1</field>
                       </block>
                     </next>
                   </block>
@@ -109,12 +109,12 @@
                     </value>
                     <value name="STARTY">
                       <block type="math_number" id="824">
-                        <field name="NUM">32</field>
+                        <field name="NUM">28</field>
                       </block>
                     </value>
                     <next>
                       <block type="multimedia_displaybmp" id="826">
-                        <field name="BMP">right</field>
+                        <field name="BMP">right1</field>
                       </block>
                     </next>
                   </block>
